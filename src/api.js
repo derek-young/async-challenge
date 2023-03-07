@@ -26,8 +26,6 @@ const isomorphicFetch = (url) => {
     value = persons[url.split("/").pop()];
   }
 
-  console.log("isomorphicFetch", value);
-
   const json = () => new Promise((resolve) => resolve(value));
 
   return new Promise((resolve, reject) => {
